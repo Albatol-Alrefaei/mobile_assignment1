@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:layout_width="321dp"
+        android:layout_height="251dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="42dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginStart="67dp"
+        android:text="@string/get_started"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        />
+    <TextView
+        android:layout_width="183dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="213dp"
+        android:layout_marginStart="78dp"
+        android:gravity="center"
+        android:text="@string/by_creating_a_free_account"
+        android:textColor="#A2A2A2"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginStart="30dp"
+        android:hint="@string/full_name"
+        android:textColorHint="#A2A2A2"
+        android:textColor="@color/black"
+        android:background="#ECECEC"
+        android:padding="15dp"
+        android:textSize="14sp"
+        android:inputType="text"
+        android:id="@+id/full_name"
+
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="325dp"
+        android:layout_marginStart="30dp"
+        android:hint="@string/valid_email"
+        android:textColorHint="#A2A2A2"
+        android:textColor="@color/black"
+        android:background="#ECECEC"
+        android:padding="15dp"
+        android:textSize="14sp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email_address"
+
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="394dp"
+        android:layout_marginStart="30dp"
+        android:hint="@string/phone_number"
+        android:textColorHint="#A2A2A2"
+        android:textColor="@color/black"
+        android:background="#ECECEC"
+        android:padding="15dp"
+        android:textSize="14sp"
+        android:inputType="text|number"
+        android:id="@+id/phone_number"
+
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="463dp"
+        android:layout_marginStart="30dp"
+        android:hint="@string/strong_password"
+        android:textColorHint="#A2A2A2"
+        android:textColor="@color/black"
+        android:background="#ECECEC"
+        android:padding="15dp"
+        android:textSize="14sp"
+        android:inputType="textPassword"
+        android:id="@+id/password"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_marginTop="532dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/terms"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="44dp"
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:text="@string/by_checking_the_box_you_agree_to_our"
+            android:textSize="9sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/terms_text"
+            android:layout_width="30dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="2dp"
+            android:layout_gravity="center"
+            android:text="@string/terms"
+            android:textColor="#6A5ACD"
+            android:textStyle="bold"
+            android:textSize="9sp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+        <TextView
+            android:layout_width="18dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="1dp"
+            android:text="@string/and"
+            android:textSize="9sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/conditions"
+            android:layout_width="43dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="1dp"
+            android:layout_gravity="center"
+            android:text="@string/conditions"
+            android:textColor="#6A5ACD"
+            android:textStyle="bold"
+            android:textSize="9sp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="630dp"
+        android:layout_marginStart="30dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="#6C63FF"
+        android:text="@string/next"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/next_button" />
+
+    <LinearLayout
+        android:layout_width="192dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="690dp"
+        android:layout_marginStart="73dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:text="@string/already_a_member"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="50dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:text="@string/log_in"
+            android:textColor="#6A5ACD"
+            android:textSize="13sp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
