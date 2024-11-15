@@ -1,7 +1,9 @@
 package com.example.firstassingment
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -9,12 +11,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login_page)
 
-        findViewById<TextView>(R.id.register)?.setOnClickListener {
-            setContentView(R.layout.create_account)
+        val registerNowLabel = findViewById<TextView>(R.id.register)
+        registerNowLabel.setOnClickListener {
+            Log.d("LoginActivity", "Pressed register now label")
 
-            findViewById<TextView>(R.id.login)?.setOnClickListener {
-                setContentView(R.layout.login_page)
-            }
+            val goToRegisterIntent = Intent(this, RegisterActivity::class.java)
+            startActivity(goToRegisterIntent)
+            finish()
         }
     }
 }
